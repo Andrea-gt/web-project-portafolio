@@ -1,0 +1,61 @@
+.welcome_container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Ghibli.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .welcome_information_block {
+    margin-top: 70px;
+    width: 60%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+    transform: translate3d(0, -10px, 0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .welcome_information_block:hover {
+    transform: translate3d(0, -5px, 0);
+  }
+  
+  .welcome_information {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .welcome_image_wrapper {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .welcome_image {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
