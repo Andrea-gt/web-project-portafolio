@@ -21,6 +21,17 @@ function App() {
         <MyWork />
       </section>
 
+      <section id='contact'>
+        <div className={styles.contact_container}>
+          <h1>Contact Me</h1>
+          <p>Feel free to contact me through my social media if you are interested!</p>
+          <div className={styles.social_media}>
+            <img src='https://img.icons8.com/?size=512&id=32323&format=png'/>
+            <img src='https://img.icons8.com/?size=512&id=63777&format=png'/>
+            <img src='https://img.icons8.com/?size=512&id=13963&format=png'/>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

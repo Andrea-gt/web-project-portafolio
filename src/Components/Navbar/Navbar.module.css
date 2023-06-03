@@ -42,7 +42,7 @@ nav {
 }
 
 .navbar_ul li a:hover {
-  color: #666;
+  color: #a3b18a;
 }
 
 .navbar_ul li::after {
@@ -52,7 +52,7 @@ nav {
   bottom: 0;
   width: 40%;
   height: 2px;
-  background-color: #FFF; /* Customize the line color */
+  background-color: #FFF; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
