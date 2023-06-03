@@ -9,9 +9,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <Welcome />
-      <About />
-      <MyWork />
+      <section id='welcome'>
+        <Welcome />
+      </section>
+
+      <section id='about'>
+        <About />
+      </section>
+
+      <section id='work'>
+        <MyWork />
+      </section>
+
     </>
   );
 }
