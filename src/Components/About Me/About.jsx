@@ -42,10 +42,13 @@ const About = () => {
           <h1>My Skills</h1>
           <div className={styles.skills_container}>
             <div className={styles.skill_container}>
+                <img src='https://img.icons8.com/?size=512&id=21278&format=png'/>
             </div>
             <div className={styles.skill_container}>
+                <img src='https://img.icons8.com/?size=512&id=108784&format=png'/>
             </div>
             <div className={styles.skill_container}>
+                <img src='https://img.icons8.com/?size=512&id=123603&format=png'/>
             </div>
           </div>
         </div>
