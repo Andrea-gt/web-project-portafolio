@@ -1,10 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import styles from './About.module.css';
 
 const About = () => {
-    const observer = new IntersectionObserver((entries) => {
+  const observer = useRef(null);
+
+  useEffect(() => {
+    observer.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.style.opacity = '1';
@@ -16,9 +19,14 @@ const About = () => {
 
     const hiddenElements = document.querySelectorAll(`.${styles.skill_container}`);
     hiddenElements.forEach((element) => {
-      observer.observe(element);
+      observer.current.observe(element);
     });
 
+    return () => {
+      observer.current.disconnect();
+    };
+  }, []);
+  
   return (
     <>
       <div className={styles.about_container}>
